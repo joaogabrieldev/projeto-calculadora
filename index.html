@@ -1,11 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto - Calculadora</title>
+    <link rel="stylesheet" href="src/styles/style.css">
 </head>
 <body>
-    
+    <div class="calculator">
+        <div class="display">
+            <div class="result">TESTE</div>
+        </div>
+        <div class="container">
+            <!--* Row 1 -->
+            <div class="bloco function">
+                <button class="btn btn-reset btn-function">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-delete-icon lucide-delete delete-icon">
+                        <path
+                            d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z" />
+                        <path d="m12 9 6 6" />
+                        <path d="m18 9-6 6" />
+                    </svg>
+                </button>
+            </div>
+            <div class="bloco function">
+                <button class="btn btn-reset btn-function btn-clean">
+                    <span class="clean clean-active">AC</span>
+                </button>
+            </div>
+            <div class="bloco function">
+                <button class="btn btn-reset btn-function">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-percent-icon lucide-percent percent-icon">
+                        <line x1="19" x2="5" y1="5" y2="19" />
+                        <circle cx="6.5" cy="6.5" r="2.5" />
+                        <circle cx="17.5" cy="17.5" r="2.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="bloco operation">
+                <button class="btn btn-reset btn-operation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-divide-icon lucide-divide divise-icon">
+                        <circle cx="12" cy="6" r="1" />
+                        <line x1="5" x2="19" y1="12" y2="12" />
+                        <circle cx="12" cy="18" r="1" />
+                    </svg>
+                </button>
+            </div>
+
+            <!--* Row 2 -->
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="7">
+                    <span>7</span>
+                </button>
+            </div>
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="8">
+                    <span>8</span>
+                </button>
+            </div>
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="9">
+                    <span>9</span>
+                </button>
+            </div>
+            <div class="bloco operation">
+                <button class="btn btn-reset btn-operation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-x-icon lucide-x x-icon">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!--* Row 3 -->
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="4">
+                    <span>4</span>
+                </button>
+            </div>
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="5">
+                    <span>5</span>
+                </button>
+            </div>
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="6">
+                    <span>6</span>
+                </button>
+            </div>
+            <div class="bloco operation">
+                <button class="btn btn-reset btn-operation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-minus-icon lucide-minus minus-icon">
+                        <path d="M5 12h14" />
+                </button>
+            </div>
+
+            <!--* Row 4 -->
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="1">
+                    <span>1</span>
+                </button>
+            </div>
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="2">
+                    <span>2</span>
+                </button>
+            </div>
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="3">
+                    <span>3</span>
+                </button>
+            </div>
+            <div class="bloco operation">
+                <button class="btn btn-reset btn-operation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-plus-icon lucide-plus plus-icon">
+                        <path d="M5 12h14" />
+                        <path d="M12 5v14" />
+                    </svg>
+                </button>
+            </div>
+
+            <!--* Row 5 -->
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number btn-change-signal">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-diff-icon lucide-diff diff-icon">
+                            <path d="M12 3v14" />
+                            <path d="M5 10h14" />
+                            <path d="M5 21h14" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number" value="0">
+                    <span>0</span>
+                </button>
+            </div>
+            <div class="bloco number">
+                <button class="btn btn-reset btn-number">
+                    <span>,</span>
+                </button>
+            </div>
+            <div class="bloco operation">
+                <button class="btn btn-reset btn-operation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-equal-icon lucide-equal equal-icon">
+                        <line x1="5" x2="19" y1="9" y2="9" />
+                        <line x1="5" x2="19" y1="15" y2="15" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
