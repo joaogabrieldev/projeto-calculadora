@@ -10,13 +10,13 @@
 
 </div>
 
-### 🌟 Deploy do Projeto: [Clique Aqui](https://projeto-calculadora.vercel.app/)
+### 🌟 Deploy do Projeto: [Clique Aqui](https://projeto-calculadora-inky.vercel.app/)
 
 ---
 
 ## 📋 Sobre o Projeto
 
-Uma calculadora moderna e interativa desenvolvida com **HTML5**, **CSS3** e **JavaScript** puro, seguindo padrões de programação orientada a objetos. O projeto apresenta um design elegante inspirado na calculadora do iOS, com interface responsiva e funcionalidades completas de uma calculadora científica básica.
+Uma calculadora moderna e interativa desenvolvida com **HTML5**, **CSS3** e **JavaScript** puro, seguindo padrões de programação orientada a objetos. Este projeto é uma **réplica fiel da calculadora padrão do iOS**, apresentando um design elegante e interface responsiva com funcionalidades completas de uma calculadora científica básica.
 
 ## 🎓 Fundamentos Aplicados
 
@@ -24,7 +24,7 @@ Uma calculadora moderna e interativa desenvolvida com **HTML5**, **CSS3** e **Ja
 - **Orientação a Objetos** - Encapsulamento e abstração
 - **Manipulação do DOM** - Interação com elementos HTML
 - **Event Handling** - Gerenciamento de eventos de usuário
-- **State Management** - Controle de estado da aplicação
+
 
 ### 🎨 Conceitos de Design
 - **CSS Grid** - Layout moderno e responsivo
