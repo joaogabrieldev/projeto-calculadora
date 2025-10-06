@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto - Calculadora</title>
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/index.css">
+    <style>
+
+    </style>
 </head>
 <body>
     <div class="calculator">
         <div class="display">
-            <div class="result">TESTE</div>
+            <!-- <div class="calcDisplay">teste</div> -->
+            <div class="result">0</div>
         </div>
         <div class="container">
             <!--* Row 1 -->
             <div class="bloco function">
-                <button class="btn btn-reset btn-function">
+                <button class="btn btn-reset btn-function" data-action="delete">
                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-delete-icon lucide-delete delete-icon">
@@ -27,12 +31,12 @@
                 </button>
             </div>
             <div class="bloco function">
-                <button class="btn btn-reset btn-function btn-clean">
+                <button class="btn btn-reset btn-function btn-clean" data-action="clear">
                     <span class="clean clean-active">AC</span>
                 </button>
             </div>
             <div class="bloco function">
-                <button class="btn btn-reset btn-function">
+                <button class="btn btn-reset btn-function" data-action="percent">
                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-percent-icon lucide-percent percent-icon">
@@ -43,7 +47,7 @@
                 </button>
             </div>
             <div class="bloco operation">
-                <button class="btn btn-reset btn-operation">
+                <button class="btn btn-reset btn-operation" data-action="operator" value="/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-divide-icon lucide-divide divise-icon">
@@ -56,22 +60,22 @@
 
             <!--* Row 2 -->
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="7">
+                <button class="btn btn-reset btn-number" value="7" data-action="number">
                     <span>7</span>
                 </button>
             </div>
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="8">
+                <button class="btn btn-reset btn-number" value="8" data-action="number">
                     <span>8</span>
                 </button>
             </div>
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="9">
+                <button class="btn btn-reset btn-number" value="9" data-action="number">
                     <span>9</span>
                 </button>
             </div>
             <div class="bloco operation">
-                <button class="btn btn-reset btn-operation">
+                <button class="btn btn-reset btn-operation" data-action="operator" value="*">
                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-x-icon lucide-x x-icon">
@@ -83,22 +87,22 @@
 
             <!--* Row 3 -->
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="4">
+                <button class="btn btn-reset btn-number" value="4" data-action="number">
                     <span>4</span>
                 </button>
             </div>
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="5">
+                <button class="btn btn-reset btn-number" value="5" data-action="number">
                     <span>5</span>
                 </button>
             </div>
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="6">
+                <button class="btn btn-reset btn-number" value="6" data-action="number">
                     <span>6</span>
                 </button>
             </div>
             <div class="bloco operation">
-                <button class="btn btn-reset btn-operation">
+                <button class="btn btn-reset btn-operation" data-action="operator" value="-">
                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-minus-icon lucide-minus minus-icon">
@@ -108,22 +112,22 @@
 
             <!--* Row 4 -->
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="1">
+                <button class="btn btn-reset btn-number" value="1" data-action="number">
                     <span>1</span>
                 </button>
             </div>
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="2">
+                <button class="btn btn-reset btn-number" value="2" data-action="number">
                     <span>2</span>
                 </button>
             </div>
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="3">
+                <button class="btn btn-reset btn-number" value="3" data-action="number">
                     <span>3</span>
                 </button>
             </div>
             <div class="bloco operation">
-                <button class="btn btn-reset btn-operation">
+                <button class="btn btn-reset btn-operation" data-action="operator" value="+">
                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-plus-icon lucide-plus plus-icon">
@@ -135,7 +139,7 @@
 
             <!--* Row 5 -->
             <div class="bloco number">
-                <button class="btn btn-reset btn-number btn-change-signal">
+                <button class="btn btn-reset btn-number btn-change-signal" data-action="change-sign">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
@@ -148,17 +152,17 @@
                 </button>
             </div>
             <div class="bloco number">
-                <button class="btn btn-reset btn-number" value="0">
+                <button class="btn btn-reset btn-number" data-action="number" value="0">
                     <span>0</span>
                 </button>
             </div>
             <div class="bloco number">
-                <button class="btn btn-reset btn-number">
+                <button class="btn btn-reset btn-number" data-action="decimal" value=".">
                     <span>,</span>
                 </button>
             </div>
             <div class="bloco operation">
-                <button class="btn btn-reset btn-operation">
+                <button class="btn btn-reset btn-operation" data-action="calculate" value="=">
                     <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-equal-icon lucide-equal equal-icon">
@@ -169,7 +173,6 @@
             </div>
         </div>
     </div>
-
+    <script src="src/scripts/index.js"></script>
 </body>
-
 </html>
