@@ -132,7 +132,7 @@ projeto-calculadora/
 - `calcular()` - Executa cálculo matemático
 - `setPorcentagem()` - Calcula porcentagem
 - `mudarSinal()` - Alterna sinal do número
-- `atualizarDisplay()` - Atualiza o display da Calculadora
+- `atualizarDisplay()` - Atualiza o display da calculadora
 
 ---
 
